@@ -1,0 +1,16 @@
+this program allow the user to compare common SNPs among 3 files A, B, S
+firstly, it will count how many common SNPs are there between A and S
+then count common SNPs between B and S
+then is count common SNPs among all 3 files
+The program will ask to select a input file as A and B
+If u like to change file S, then u have to modify the code, by changing the variable fileS (including suffix) eg. change to a.txt then fileS="a.txt"
+the input files as A and B should be place in folder /input_files
+and file S should be placed in folder /file_S
+
+the counting result will be displayed and be recorded in log/log.txt
+
+to compile the codes: g++ -lstdc++fs -std=c++17 -o Counting main.cpp seperation.cpp comparison.cpp -lstdc++fs
+then execute codes: ./counting
+
+Note that if u are using MSYS in windows to compile this code, it might not work due to some bug with MSYS itself
+Also, there is no file in /file_S currently, u have to add a new file before using the codes.
